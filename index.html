@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encode Decode</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h2 id="encoder">Text Encoder</h2>
+            <h2 id="decoder">Text Decoder</h2>
+        </div>
+
+        <div id="encode-section" class="center">
+            <textarea id="encode-text" cols="40" rows="8" placeholder="Please enter your text here..."></textarea>
+            <button id="encode-text-btn" class="btn btn-primary">Encode Text</button>
+            <h4 id="password-section">Your decoding password is :&nbsp;<span id="encode-password"></span></h4>
+        </div>
+
+        <div id="decode-section" class="center">
+            <div class="card">
+                <div class="card-header" id="decode-head">
+                    <h5 class="text-center">Decoded Text</h5>
+                </div>
+                <div class="card-body">
+                    <textarea id="encode-text" cols="40" rows="8" placeholder="Please enter your text here..."></textarea>
+                    <div>
+                        Password: <input type="text">
+                    </div>
+                </div>
+            </div>
+            <button id="decode-text-btn" class="btn btn-primary">Encode Text</button>
+        </div>
+    </div>
+    <footer>
+        <p>© copyright 2022 by Rownok, all right reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
