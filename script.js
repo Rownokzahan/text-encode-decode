@@ -2,6 +2,8 @@ document.getElementById('encoder').addEventListener('click',function(){
     //closing text decoder section
     document.getElementById('decoder').style.backgroundColor='rgb(60, 159, 235)';
     document.getElementById('decode-section').style.display='none';
+    document.getElementById('decode-text-btn').style.backgroundColor='rgb(60, 159, 235)'; 
+    document.getElementById('decode-head').style.display='none';
 
     // opening text encoder section
     document.getElementById('encoder').style.backgroundColor='rgb(7, 41, 68)';
