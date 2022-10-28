@@ -191,30 +191,3 @@ function SwapLetter(text, letter1, letter2){
     }
     return newText.join("")
 }
-
-
-    // //closing text-encoder section
-    // document.getElementById('encoder').style.backgroundColor='rgb(60, 159, 235)';
-    // document.getElementById('encode-text-btn').style.backgroundColor='rgb(60, 159, 235)'; 
-    // document.getElementById('encode-section').style.display='none';
-    // document.getElementById('password-section').style.display='none';
-    // document.getElementById('encode-text').value = '';
-
-    // // opening text decoder section
-    // document.getElementById('decoder').style.backgroundColor='rgb(7, 41, 68)';
-    // document.getElementById('decode-section').style.display='flex';
-
-    // //closing text decoder section
-    // document.getElementById('decoder').style.backgroundColor='rgb(60, 159, 235)';
-    // document.getElementById('decode-text-btn').style.backgroundColor='rgb(60, 159, 235)'; 
-    // document.getElementById('decode-section').style.display='none';
-    // document.getElementById('decoded-text-section').style.display='none';
-    // document.getElementById('decode-text').value = '';
-
-    // // opening text encoder section
-    // document.getElementById('encoder').style.backgroundColor='rgb(7, 41, 68)';
-    // document.getElementById('encode-section').style.display='flex';
-
-
-
-
