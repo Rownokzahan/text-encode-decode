@@ -1,8 +1,17 @@
-
 function enCode(text,encodePassword){
-    encodePassword = encodePassword;
-    for (let i = 0; i < encodePassword.length; i++) {
-        const digit = encodePassword.charAt(i);
+    encodePassword ='ⓐⓑⓒⓓ'+ encodePassword;
+    return textChanger(text,encodePassword);
+}
+
+function deCode(text,decodePassword){
+    decodePassword = reverseText(decodePassword);
+    decodePassword = decodePassword +'ⓓⓒⓑⓐ';
+    return textChanger(text,decodePassword);
+}
+
+function textChanger(text,password){
+    for (let i = 0; i < password.length; i++) {
+        const digit = password.charAt(i);
         
         if(digit=='ⓐ'){
             text = reverseText(text);
@@ -20,19 +29,19 @@ function enCode(text,encodePassword){
             text = SwapLetter(text,'e','t');
         }
         else if(digit=='1'){
-            text = SwapLetter(text,'t','i');
+            text = SwapLetter(text,'t','m');
         }
         else if(digit=='1'){
-            text = SwapLetter(text,'a','e');
+            text = SwapLetter(text,'a','*');
         }
         else if(digit=='2'){
-            text = SwapLetter(text,'n','o');
+            text = SwapLetter(text,'$','o');
         }
         else if(digit=='3'){
-            text = SwapLetter(text,'s','n');
+            text = SwapLetter(text,'s','N');
         }
         else if(digit=='4'){
-            text = SwapLetter(text,'s','e');
+            text = SwapLetter(text,'m','s');
         }
         else if(digit=='5'){
             text = SwapLetter(text,'h','r');
@@ -41,24 +50,23 @@ function enCode(text,encodePassword){
             text = SwapLetter(text,'r','a');
         }
         else if(digit=='7'){
-            text = SwapLetter(text,'d','n');
+            text = SwapLetter(text,'$','n');
         }
         else if(digit=='8'){
-            text = SwapLetter(text,'h','s');
+            text = SwapLetter(text,'h','#');
         }
         else if(digit=='9'){
             text = SwapLetter(text,'d','t');
-        }    
-    
-    }
-    
+        }        
+    }    
     return text;
 }
 
-const demoText = enCode('I am Rownok. I am 22 years old','0123456789');
+
+const demoText = enCode('Mudra','123');
 console.log(demoText);
-const newText = enCode(demoText,'9876543210');
-console.log(newText)
+const newText = deCode(demoText,'123');
+console.log(newText);
 
 
 

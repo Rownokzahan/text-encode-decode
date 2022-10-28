@@ -19,22 +19,27 @@
         <div id="encode-section" class="center">
             <textarea id="encode-text" cols="40" rows="8" placeholder="Please enter your text here..."></textarea>
             <button id="encode-text-btn" class="btn btn-primary">Encode Text</button>
-            <h4 id="password-section">Your decoding password is :&nbsp;<span id="encode-password"></span></h4>
+            <div id="password-section" class="center">
+                <h5>Encoded Text</h5>
+                <p id="encoded-text"></p>
+                <h5>Decoding password is :&nbsp;<span id="encode-password"></span></h5>
+            </div>
         </div>
 
         <div id="decode-section" class="center">
             <div class="card">
-                <div class="card-header" id="decode-head">
-                    <h5 class="text-center">Decoded Text</h5>
-                </div>
                 <div class="card-body">
-                    <textarea id="encode-text" cols="40" rows="8" placeholder="Please enter your encoded text here..."></textarea>
+                    <textarea id="decode-text" cols="40" rows="8" placeholder="Please enter your encoded text here..."></textarea>
                     <div>
-                        Password: <input type="text" placeholder="Enter decode password">
+                        Password: <input id="decode-password" type="text" placeholder="Enter decode password">
                     </div>
                 </div>
             </div>
-            <button id="decode-text-btn" class="btn btn-primary">Encode Text</button>
+            <button id="decode-text-btn" class="btn btn-primary">Decode Text</button>
+            <div id="decoded-text-section" class="center">
+                <h5>Decoded Text</h5>
+                <p id="decoded-text"></p>
+            </div>
         </div>
     </div>
     <footer>
@@ -42,7 +47,7 @@
     </footer>
 
     <!-- custom script are here -->
-    <!-- <script src="script.js"></script> -->
-    <script src="script-2.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="txt-encode-decode.js"></script> -->
 </body>
 </html>
