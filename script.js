@@ -92,14 +92,12 @@ document.getElementById('decode-text-btn').addEventListener('click',function(){
 function decode(text,decodePassword){
     decodePassword = reverseText(decodePassword);
     decodePassword = decodePassword +'ⓑⓐ';
-    console.log(decodePassword);
     document.getElementById('decoded-text').innerText= textChanger(text,decodePassword);
 }
 
 function textChanger(text,password){
     for (let i = 0; i < password.length; i++) {
         let digit = password.charAt(i);
-        console.log(digit);
         if(digit=='ⓐ'){
             text = reverseText(text);
         }
