@@ -22,9 +22,9 @@ function textChanger(text,password){
         else if(digit=='ⓒ'){
             text = reverseSentence(text);
         }
-        else if(digit=='ⓓ'){
-            text = swapCase(text);
-        }
+        // else if(digit=='ⓓ'){
+        //     text = swapCase(text);
+        // }
         else if(digit=='0'){
             text = SwapLetter(text,'e','t');
         }

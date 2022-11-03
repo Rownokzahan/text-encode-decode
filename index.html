@@ -10,44 +10,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="center">
-            <h2 id="encoder">Text Encoder</h2>
-            <h2 id="decoder">Text Decoder</h2>
-        </div>
-
-        <div id="encode-section" class="center">
-            <textarea id="encode-text" cols="40" rows="8" placeholder="Please enter your text here..."></textarea>
-            <button id="encode-text-btn" class="btn btn-primary">Encode Text</button>
-            <div id="password-section" class="center">
-                <h5>Encoded Text</h5>
-                <p id="encoded-text"></p>
-                <h5>Decoding password is :&nbsp;<span id="encode-password"></span></h5>
+    <header>
+        <nav>
+            <div class="container d-flex justify-content-around">
+                <div class="p-2 center"><a href="index.html">𝓣𝓮𝔁𝓽</a></div>
+                <div class="p-2 center"><a href="index.html">Encode/Decode</a></div>
+                <div class="p-2 center"><a href="text-changer.html">Text Changer</a></div>
             </div>
-        </div>
-
-        <div id="decode-section" class="center">
-            <div class="card">
-                <div class="card-body">
-                    <textarea id="decode-text" cols="40" rows="8" placeholder="Please enter your encoded text here..."></textarea>
-                    <div>
-                        Password: <input id="decode-password" type="text" placeholder="Enter decode password">
-                    </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container main-section">
+            <div class="center">
+                <h2 id="encoder">Text Encoder</h2>
+                <h2 id="decoder">Text Decoder</h2>
+            </div>
+    
+            <div id="encode-section" class="center">
+                <textarea id="encode-text" cols="40" rows="8" placeholder="Please enter your text here..."></textarea>
+                <button id="encode-text-btn" class="btn btn-primary">Encode Text</button>
+                <div id="password-section" class="center">
+                    <h5>Encoded Text</h5>
+                    <p id="encoded-text"></p><button>Copy</button>
+                    <h5>Decoding password is :&nbsp;<span id="encode-password"></span></h5>
                 </div>
             </div>
-            <button id="decode-text-btn" class="btn btn-primary">Decode Text</button>
-            <div id="decoded-text-section" class="center">
-                <h5>Decoded Text</h5>
-                <p id="decoded-text"></p>
+    
+            <div id="decode-section" class="center">
+                <div class="card">
+                    <div class="card-body">
+                        <textarea id="decode-text" cols="40" rows="8" placeholder="Please enter your encoded text here..."></textarea>
+                        <div>
+                            Password: <input id="decode-password" type="text" placeholder="Enter decode password">
+                        </div>
+                    </div>
+                </div>
+                <button id="decode-text-btn" class="btn btn-primary">Decode Text</button>
+                <div id="decoded-text-section" class="center">
+                    <h5>Decoded Text</h5>
+                    <p id="decoded-text"></p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer>
         <p>© copyright 2022 by Rownok, all right reserved</p>
     </footer>
 
     <!-- custom script are here -->
     <script src="script.js"></script>
-    <!-- <script src="txt-encode-decode.js"></script> -->
+
 </body>
 </html>
