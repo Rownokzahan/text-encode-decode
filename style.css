@@ -1,3 +1,9 @@
+nav{
+    padding: 10px;
+}
+.brand-name{
+    font-size: 22px;
+}
 header{
     background-color: rgb(242, 236, 248);
 }
@@ -70,7 +76,6 @@ footer p{
     text-align: center;
     font-size: 10px;
 }
-
 
 #change-text{
     background-color: rgb(7, 41, 68);
