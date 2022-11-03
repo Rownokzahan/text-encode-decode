@@ -5,6 +5,7 @@ document.getElementById('encoder').addEventListener('click',function(){
     document.getElementById('decode-section').style.display='none';
     document.getElementById('decoded-text-section').style.display='none';
     document.getElementById('decode-text').value = '';
+    document.getElementById('decode-password').value ='';
 
     // opening text encoder section
     document.getElementById('encoder').style.backgroundColor='rgb(7, 41, 68)';
@@ -47,7 +48,7 @@ function randomPasswordGenerator(){
 }
 
 function encode(text,encodePassword){
-    encodePassword ='ⓐⓑⓒⓓ'+ encodePassword;
+    encodePassword ='ⓐⓑ'+ encodePassword;
     document.getElementById('encoded-text').innerText= textChanger(text,encodePassword);
 }
 
@@ -90,27 +91,27 @@ document.getElementById('decode-text-btn').addEventListener('click',function(){
 });
 function decode(text,decodePassword){
     decodePassword = reverseText(decodePassword);
-    decodePassword = decodePassword +'ⓓⓒⓑⓐ';
+    decodePassword = decodePassword +'ⓑⓐ';
     console.log(decodePassword);
     document.getElementById('decoded-text').innerText= textChanger(text,decodePassword);
 }
 
 function textChanger(text,password){
     for (let i = 0; i < password.length; i++) {
-        const digit = password.charAt(i);
-        
+        let digit = password.charAt(i);
+        console.log(digit);
         if(digit=='ⓐ'){
             text = reverseText(text);
         }
         else if(digit=='ⓑ'){
             text = reverseWord(text);
         }
-        else if(digit=='ⓒ'){
-            text = reverseSentence(text);
-        }
-        else if(digit=='ⓓ'){
-            text = swapCase(text);
-        }
+        // else if(digit=='ⓒ'){
+        //     text = reverseSentence(text);
+        // }
+        // else if(digit=='ⓓ'){
+        //     text = swapCase(text);
+        // }
         else if(digit=='0'){
             text = SwapLetter(text,'e','t');
         }
