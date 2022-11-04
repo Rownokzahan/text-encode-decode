@@ -52,6 +52,11 @@ function encode(text,encodePassword){
     document.getElementById('encoded-text').innerText= textChanger(text,encodePassword);
 }
 
+document.getElementById('copy-btn').addEventListener('click',function(){
+    const copyText= document.getElementById('encoded-text');
+    navigator.clipboard.writeText(copyText.innerText);
+    document.getElementById('copy-btn').innerHTML= '<i class="fa fa-check"></i>';
+});
 
 document.getElementById('decoder').addEventListener('click',function(){
     //closing text-encoder section

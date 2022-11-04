@@ -53,7 +53,26 @@ button.btn:hover,.container h2:hover{
     margin: 10px;
 }
 
-#encoded-text, #decoded-text{
+.encoded-text-area{
+    border: 2px solid gray;
+    box-shadow: 0 0 2px 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 350px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#encoded-text{
+    padding: 10px;
+}
+
+#copy-btn{
+    padding: 3px;
+    color: rgb(7, 41, 68);
+}
+
+#decoded-text{
     border: 2px solid gray;
     box-shadow: 0 0 2px 0;
     border-radius: 14px;
